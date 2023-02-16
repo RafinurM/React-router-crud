@@ -1,38 +1,133 @@
-.App {
+.header {
+  border: 1px solid rgb(207, 207, 207);
+  border-radius: 5px;
+  height: 35px;
+  width: 90%;
+  background-color: rgb(224, 224, 224);
+  position: relative;
   text-align: center;
+  margin: 0 auto;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title {
+  font-size: 16px;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(66, 66, 90);
+  font-weight: 900;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.create-post-button {
+  position: absolute;
+  right: 15px;
+  top: 3px;
+  width: 90px;
+  border-radius: 5px;
+  background-color: rgb(94, 51, 192);
+  padding: 5px;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.publish-post-button, .post-like-button, .post-comment-button, .post-edit-button, .post-save-button {
+  width: 90px;
+  border-radius: 5px;
+  background-color: rgb(94, 51, 192);
+  padding: 5px;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+
+.post-delete-button {
+  width: 90px;
+  border-radius: 5px;
+  background-color: rgb(189, 0, 0);
+  padding: 5px;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+
+.create-post {
+  width: 90%;
+  border: 1px solid gray;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.posts {
+  width: 90%;
+  margin: 10px auto;
+  background-color: rgb(233, 233, 233);
+  border-radius: 5px ;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.post {
+  margin: 10px 0;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  display: flex;
+}
+
+.post-text {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 50px;
+  max-height: 700px;
+  font-size: large;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.post-author {
+  width: 15%;
+  text-align: center;
+}
+.post-avatar {
+  width: 80px;
+  margin: 5px ;
+}
+
+.post-main {
+  width: 80%;
+  margin: 0 auto;
+}
+.post-react-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin: 5px auto;
+  
+}
+
+.comment-textarea {
+  min-width: 100%;
+  max-width: 100%;
+  border-radius: 15px;
+  padding: 10px 5px;
+
+}
+
+
+.post-create, .edit-field {
+  width: 90%;
+  margin: 10px auto;
+  position: relative;
+}
+
+.post-text {
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+.post-link {
+  text-decoration: none;
+}
+.post-create-close {
+  position: absolute;
+  right: 0;
+  top: 0;
 }
